@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="container">
+	<header class="bg1 clearfix">
+		<h1>Exercise 3 Vocabulary</h1>
+	</header>
+	<section class="bg1 clearfix">
+		<div class="quiz quiz1">
+			<h2>Label the weather symbols.</h2>
+			<div class="row" id="quiz1-container"></div>
+			<div class="description tcenter">
+				snowing cloudy raining foggy windy sunny
+			</div>
+		</div>
+		<div class="quiz quiz2 hide">
+			<h2>What school activities do you see on the picture?</h2>
+			<div class="row" id="quiz2-container">
+
+			</div>
+		</div>
+	</section>
+	<footer>
+		<ul class="pager">
+		  <li><a class="prev" href="#">Previous</a></li>
+		  <li><a class="next" href="#">Next</a></li>
+		</ul>
+	</footer>
+	</div>
+
+	<script type="text/template" id="quiz1-template">
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise1/1.png" /></p><input type="text" data-id="0" /></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise1/2.png" /></p><input type="text" data-id="1" /></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise1/3.png" /></p><input type="text" data-id="2" /></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise1/4.png" /></p><input type="text" data-id="3" /></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise1/5.png" /></p><input type="text" data-id="4" /></div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise1/6.png" /></p><input type="text" data-id="5" /></div>
+		<input type="button" value="quiz1" class="submit" />
+	</script>
+	
+	<script type="text/template" id="quiz2-template">
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise2/1.png" /></p>1</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise2/2.png" /></p>2</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise2/3.png" /></p>3</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise2/4.png" /></p>4</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise2/5.png" /></p>5</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel"><p><img src="images/exercise2/6.png" /></p>6</div>
+		
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel answer"><p><input type="text" data-id="0" size="2" /></p> enjoying a field trip</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel answer"><p><input type="text" data-id="1" size="2" /></p> working a computer</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel answer"><p><input type="text" data-id="2" size="2" /></p> taking a test</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel answer"><p><input type="text" data-id="3" size="2" /></p> doing a project</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel answer"><p><input type="text" data-id="4" size="2" /></p> giving a presentation</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 tcenter prel answer"><p><input type="text" data-id="5" size="2" /></p> practicing yoga</div>
+		<input type="button" value="quiz2" class="submit" />
+	</script>
+	
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="http://underscorejs.org/underscore-min.js" type="text/javascript"></script>
+	<script src="http://backbonejs.org/backbone-min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>
